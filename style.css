@@ -1,0 +1,33 @@
+.one a{
+    position: fixed;
+    text-decoration: none;
+    padding: 25px 50px;
+    background-color: transparent;
+    color: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-weight: 900;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.one a::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .5s;
+}
+.one a:hover::before{
+    width: 100%;
+}
+.one a:hover{
+    color: white;
+}
